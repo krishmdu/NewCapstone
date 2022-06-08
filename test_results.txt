@@ -1,0 +1,39 @@
+
+C:\BIG\1-DA\OneDrive\Udacity\heroku_sample - Copy>set SECRET=TestSecret
+
+C:\BIG\1-DA\OneDrive\Udacity\heroku_sample - Copy>set EXECUTIVE_PRODUCER=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImxDaW5XZkpBRjV0ZlE2TDR4V0FpbSJ9.eyJpc3MiOiJodHRwczovL2Rldi1pNWYwazc0aC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTM5NTkyMDE5NDg3MzIzMjI1ODgiLCJhdWQiOiJuZXdBUEkiLCJpYXQiOjE2NTQ2ODUyMzQsImV4cCI6MTY1NDY5MjQzNCwiYXpwIjoiUUR2ZDdwWjRzUzVDWXFYQ3dUMnREaVdhTk5VY0s0OU0iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.c7tmqcPsdRCXOXqum99o23Tarom3KyfR2bshLEE5mXf8SgNv0f0zJwiuZ-fGHUvAwZd3tklPARCBYHSW5FFQjSFBuiF_Ro9rHUjcCiRvw5W8fdy_18404LDmzZVMuqS5_N9Wx7oFyPxkwhXRaCc4ZrGxtzMYOFSBmtt3yVgt0GRFRK5CpHrW36qChq-Gcrlp0gDeudierWVDHPcsBjIVWHxMA9QbF-KLZzBjUOEYBuRr-FFZIMWGZsxCx1PuAH3toFOcuCtAA5hxLaYca8XX-YZbxW7AgJtAnmk8dC3vdg2WLOBE8DfWzIGE1oOK5b7aOdGObpnKZ16XmW3BAG2Rgg
+
+C:\BIG\1-DA\OneDrive\Udacity\heroku_sample - Copy>set CASTING_DIRECTOR=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImxDaW5XZkpBRjV0ZlE2TDR4V0FpbSJ9.eyJpc3MiOiJodHRwczovL2Rldi1pNWYwazc0aC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDY0ODg2NDA1OTAwNjk2NzQzODkiLCJhdWQiOiJuZXdBUEkiLCJpYXQiOjE2NTQ2ODUxMjIsImV4cCI6MTY1NDY5MjMyMiwiYXpwIjoiUUR2ZDdwWjRzUzVDWXFYQ3dUMnREaVdhTk5VY0s0OU0iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIl19.NhPqPh_nIGNWBpyHTchhCBbr6nIeIlqZJgu2ghad38FRPLFkOmNBCg-zRgSfbct6iaioS8VolNN2AOclCJcdbYl0DN9AFxRuV0KoCr421zASm4fM4ARpsifyTILQOorNPmosgCTQuH7u60gQ40-yVgr8PFWrOpio5LsA-yWnab0TysBDknuklFRKLq7hxO6o5c0gvfujjedRhPPyo2zY2gY7eLDQu9S6A4Wt342NPBkyVBTfgu_aibxnsXhc7jGnyPid06q1eUs3808ormGrgXTZhFcpmU0pBis5cordxK1oobUjPtsc71Kn2sWGNVAEUJqlWkck4975f7jJb8foKQ
+
+C:\BIG\1-DA\OneDrive\Udacity\heroku_sample - Copy>set CASTING_ASSISTANT=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImxDaW5XZkpBRjV0ZlE2TDR4V0FpbSJ9.eyJpc3MiOiJodHRwczovL2Rldi1pNWYwazc0aC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTY0Mjg4MTkwNjM5NzQxMzM4MTUiLCJhdWQiOiJuZXdBUEkiLCJpYXQiOjE2NTQ2ODUyNzQsImV4cCI6MTY1NDY5MjQ3NCwiYXpwIjoiUUR2ZDdwWjRzUzVDWXFYQ3dUMnREaVdhTk5VY0s0OU0iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIl19.lCEUAy7kLO-F159pUt5Z4NFJcaTtzscZ6WAUtnWlKIhH-v5KbbndW_JMzl-74pjBx1WyDF0FoY6cJNAGBbLcBgYnVaXojShw-g6IZa0F7ddPnPFM_gkhLTCTlbHY-fs5if4kZbv0QMpm42E4YKYC7n9VW9aQB0pkDxkpCDdgR9nLojZSL9CPUlgIy1LtjpS5pb3J7N-4OZKY_6Yh4nkLg_1UgOrKlrefT9OJy8auGOT2D6B0HgPb5rGjEEtTFOlChUgkQ2qRZJvJVEmatsEKJCwEZKPJ3773-wFwpCGda9f-rzYNLr54IV65ESuRz7z8PK8k1PiIe-AnnxB0V_XWug
+
+C:\BIG\1-DA\OneDrive\Udacity\heroku_sample - Copy>pytest
+============================================== test session starts ===============================================
+platform win32 -- Python 3.9.5, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: C:\BIG\1-DA\OneDrive\Udacity\heroku_sample - Copy
+plugins: html-3.1.1, metadata-1.11.0
+collected 22 items
+
+test_app.py ......................                                                                          [100%]
+
+================================================ warnings summary ================================================
+..\..\..\..\..\Users\Krishna\AppData\Roaming\Python\Python39\site-packages\flask\json\__init__.py:31
+  C:\Users\Krishna\AppData\Roaming\Python\Python39\site-packages\flask\json\__init__.py:31: DeprecationWarning: Importing 'itsdangerous.json' is deprecated and will be removed in ItsDangerous 2.1. Use Python's 'json' module instead.
+    _slash_escape = "\\/" not in _json.dumps("/")
+
+..\..\..\..\..\Users\Krishna\AppData\Roaming\Python\Python39\site-packages\flask\json\__init__.py:61
+  C:\Users\Krishna\AppData\Roaming\Python\Python39\site-packages\flask\json\__init__.py:61: DeprecationWarning: Importing 'itsdangerous.json' is deprecated and will be removed in ItsDangerous 2.1. Use Python's 'json' module instead.
+    class JSONEncoder(_json.JSONEncoder):
+
+..\..\..\..\..\Users\Krishna\AppData\Roaming\Python\Python39\site-packages\flask\json\__init__.py:103
+  C:\Users\Krishna\AppData\Roaming\Python\Python39\site-packages\flask\json\__init__.py:103: DeprecationWarning: Importing 'itsdangerous.json' is deprecated and will be removed in ItsDangerous 2.1. Use Python's 'json' module instead.
+    class JSONDecoder(_json.JSONDecoder):
+
+test_app.py: 22 warnings
+  C:\Users\Krishna\AppData\Roaming\Python\Python39\site-packages\flask\json\__init__.py:211: DeprecationWarning: Importing 'itsdangerous.json' is deprecated and will be removed in ItsDangerous 2.1. Use Python's 'json' module instead.
+    rv = _json.dumps(obj, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================================== 22 passed, 25 warnings in 4.55s =========================================
+
+C:\BIG\1-DA\OneDrive\Udacity\heroku_sample - Copy>
