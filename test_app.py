@@ -7,17 +7,17 @@ import pytest
 import app
 
 
-SECRET = 'TestSecret'
-TOKEN_EP = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJFWXpNRVJGUWpKRFFUUkdOVE0zTXpKQ1JqQXpOakpETXpVd1EwRTVNamhHTmpjNU1qUkdNUSJ9.eyJpc3MiOiJodHRwczovL2Rldi1lcmJxdHI3aS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWRkZDIzNWQ3YjNlZmIwY2QwYWYzODQ2IiwiYXVkIjoiY2FzdGluZ19hZ2VuY3kiLCJpYXQiOjE1NzkzNDczNzYsImV4cCI6MTU3OTQzMzc3NiwiYXpwIjoicXBnSUJzS01sVnczRVpZcG1PYWZ2MHdZaHFmd1RCZ04iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.whE9fmQ7hbEMvrFn0P5DG44RXZeBAGvXXYUsWwVGfcRr2wRIkT0hLnJh_EdTfLXjFgJy9_PzySDnPMAZqVdCjV-bBV_tfP0nBwqar3VBZr9itKDTu7t97c1pa4QxtBrZwb779T3GPN89XBRmwAam7lgMgwbj-HdzopfdFXN0frygi7UtY0L7EmUPfMRe9H87ZVUYYZHXITdpljRYiFw0C5P-RdHbal0OjpGaEulYPQ54WtRw9W-mR752jKxcR7hS6KbV0yshBzKiTrHy-nvfbFG0RHkuWFZpPOmm3K1BCUTVwrC2fxwLkwFmftyqoFQCO9ghw74UBi2KEeS-zBJSiA'
-TOKEN_CD = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJFWXpNRVJGUWpKRFFUUkdOVE0zTXpKQ1JqQXpOakpETXpVd1EwRTVNamhHTmpjNU1qUkdNUSJ9.eyJpc3MiOiJodHRwczovL2Rldi1lcmJxdHI3aS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWRkY2UwNjE3YjNlZmIwY2QwYWYzMzZhIiwiYXVkIjoiY2FzdGluZ19hZ2VuY3kiLCJpYXQiOjE1NzkzNDc1NTAsImV4cCI6MTU3OTQzMzk1MCwiYXpwIjoicXBnSUJzS01sVnczRVpZcG1PYWZ2MHdZaHFmd1RCZ04iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIl19.GgigHEIF0gjRzqrY5f-QHe-l2UMRrtoAtrwqCLQAmI1FCd_m0OqsTerjehKyH5gX1BpcsCFLU4bMiC-yQp4DFET6NYYiuReTLD6fUOeU91Sfd4cplWw1Jgaseib9692NPqd3xJLAzw16Q5F9SEdHUtb4AlLAVU2z9Wv6UkmiO-smenAwEZBeuPxMF1AwzX0lhNSzST1n8MTqyWwHH4JaHGnQQ0tlfg24PZBWQsJYsuF1S6Hk7tUK_Lf-pd5dSGNPA7YdfnXzc2zqpBBvd_Db7k-5i3iYk8T6StS1Ixlio7x5xuIjT-r0a_obUDtexjuPHMUOouhtDxf6N3407F8yPQ'
-TOKEN_CA = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJFWXpNRVJGUWpKRFFUUkdOVE0zTXpKQ1JqQXpOakpETXpVd1EwRTVNamhHTmpjNU1qUkdNUSJ9.eyJpc3MiOiJodHRwczovL2Rldi1lcmJxdHI3aS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWRkN2UxOTAyOTkwNzcwZjJhMzI5Y2ZjIiwiYXVkIjoiY2FzdGluZ19hZ2VuY3kiLCJpYXQiOjE1NzkzNDc2NDcsImV4cCI6MTU3OTQzNDA0NywiYXpwIjoicXBnSUJzS01sVnczRVpZcG1PYWZ2MHdZaHFmd1RCZ04iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIl19.IlfUZye5PnYcLUTCXGYvcqzihdrVfp70JCLCHszwbVJj7-uzymsWxCNG7-_20PYZAPb1YmBwsIoT8HISBmI4YIiUXeV_6WWrIyzrEePiZAQ48slO8mi0A2ONCYR0sOu19ji7oie8tvZNhlEXBk4m1uNkK2Q4J59UuiJmatJwhfaxDlcE-OaxUzp02IlXSyXMaK_T7ep07KT62HcsyTG3HzX61375dJI3GHmnMbnCNwxPnGFQUTLljQsox99XpXay7ivkGllOwzdoQ6RqvfuUmD8tpwxedCZyJ189VFm7-kIdBkohlklXnzPO4mEYw0o_1Od5Kra7kRXDNKNHgNWUPg'
+SECRET   = os.environ['SECRET']
+TOKEN_EP = os.environ['EXECUTIVE_PRODUCER']
+TOKEN_CD = os.environ['CASTING_DIRECTOR']
+TOKEN_CA = os.environ['CASTING_ASSISTANT']
 
 
 @pytest.fixture
 def client():
     os.environ['JWT_SECRET'] = SECRET
-    app.APP.config['TESTING'] = True
-    client = app.APP.test_client()
+    app.app.config['TESTING'] = True
+    client = app.app.test_client()
 
     yield client
 
@@ -155,7 +155,7 @@ def test_post_movies_error(client):
 
 def test_update_movies_error(client):
     body = {'a': 'movie2',
-            'b': '2019-11-11'}
+            'b': '2000-11-12'}
     headers = {'Authorization':  f'Bearer {TOKEN_EP}'}
     response = client.patch('/movies/1',
                             data=json.dumps(body),
